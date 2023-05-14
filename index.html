@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Website</title>
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       background-image: url('content/pomodoro_background.png');
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center top -50px;
+    }
+    
+    #overlay-image {
+      position: absolute; /* set the position of the overlay image to absolute */
+      bottom: 57%; /* align the bottom edge of the image with the bottom edge of the body element */
+      left: 47%; /* center the image horizontally */
+      transform: translateX(-50%); /* adjust the horizontal position to center the image */
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>This is some sample text.</p>
+  <img id="overlay-image" src="content/balloon_1.png">
+  <script src="path/to/script.js"></script>
 </body>
 </html>
